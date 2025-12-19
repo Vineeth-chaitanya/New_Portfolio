@@ -97,7 +97,6 @@ footer {
   text-align: center;
   padding: 40px 20px;
   background: #fefefe;
-  border-top: 1px solid #eee;
   color: #666;
 }
 
@@ -150,4 +149,108 @@ footer {
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: 450;
+}
+
+#projects {
+  margin-bottom: 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project-card {
+  position: relative;
+  background: #f8f9fa;          /* Light card background */
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-decoration: none;     /* ← Add this line */
+}
+
+.project-card:hover .project-link {
+  opacity: 1;
+}
+
+.project-link:hover {
+  text-decoration: none;     /* ← Optional, but safe */
+}
+
+
+.link-icon {
+  font-size: 1.2rem;
+  color: #0066cc;               /* Your accent color */
+}
+
+.project-card h3 {
+  margin: 0 0 15px;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.social-sidebar.horizontal {
+  position: fixed;
+  bottom: 100px;                 /* Distance from bottom */
+  left: 320px;                   /* Matches your nav spacing */
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.social-sidebar.horizontal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;                     /* Space between icons */
+}
+
+.social-sidebar.horizontal li a {
+  display: block;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-sidebar.horizontal li a:hover {
+  opacity: 1;
+  transform: translateY(-6px) scale(1.1); /* Creative: lift + slight grow on hover */
+}
+
+.social-sidebar.horizontal img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(100%);
+}
+
+.social-sidebar.horizontal a:hover img {
+  filter: grayscale(0%);
 }
