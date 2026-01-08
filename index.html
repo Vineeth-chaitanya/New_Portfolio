@@ -64,30 +64,33 @@
       <div class="experience-item">
         <div class="date">Feb 2025 — Sep 2025</div>
         <h3>
-          <a href="https://thrivingelements.org/" target="_blank">Data Scientist · Thriving Elements</a>
+          <a href="https://www.uhc.com/" target="_blank">Data Scientist · United Health Group</a>
         </h3>
-        <p style="max-width: 620px;">At Thriving Elements, I built a mentor-mentee recommendation system that automated matching across
-          cohorts. I combined TF-IDF, cosine similarity, and sentence-BERT embeddings with FAISS search to
-          improve semantic relevance and reduce manual matching effort. I engineered structured features
-          from participant profiles using Python and SQL.
+        <p style="max-width: 620px;">At UnitedHealth Group, I worked across large-scale claims, EHR, PBM,
+          and eligibility datasets to strengthen population health analytics and risk-stratification workflows.
+          I built and evaluated supervised ML models like XGBoost, Random Forest, and Logistics Regression to predict hospitalization
+          risk, medication non-adherence, and emerging care gaps across diverse member populations.
         </p>
         <p style="max-width: 620px;">
-          I worked closely with program managers to refine matching criteria, integrate feedback loops,
-          and align the system with how the Organization actually operates.
+          A major part of my work involved engineering clinically meaningful features such as comorbidity indices, utilization patterns,
+          and adherence metrics (PDC/MPR), and operationalizing these models within HIPAA-aligned data pipelines. I collaborated closely with clinical,
+          actuarial, and care-management teams to validate outputs, refine thresholds, and translate model insights into actionable
+          dashboards that supported targeted interventions and improved care outcomes.
         </p>
         <ul class="tech-list">
           <li>Python</li>
           <li>SQL</li>
-          <li>FAISS</li>
-          <li>sentence-BERT</li>
-          <li>TF-IDF</li>
+          <li>Logistic Regression</li>
+          <li>XGBoost</li>
+          <li>ROC-AUC</li>
+          <li>HIPAA</li>
         </ul>
       </div>
 
       <div class="experience-item">
         <div class="date">Feb 2021 — Dec 2022</div>
         <h3>
-          <a href="https://www.cognizant.com/us/en" target="_blank">Programmer Analyst · Cognizant Technology Solutions</a>
+          <a href="https://www.cognizant.com/us/en" target="_blank">Data Analyst · Cognizant Technology Solutions</a>
         </h3>
         <p style="max-width: 620px;">At Cognizant, I supported data ingestion, transformation, and validation workflows across
           SQL Server and Excel for financial services client. I optimized SQL queries, stored procedures,
@@ -111,6 +114,28 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="project-grid">
+        <div class="project-card">
+          <a href="" target="_blank" class="project-link">
+            <span class="link-icon">🔗</span>
+          </a>
+          <h3>Causal Policy Optimization for Vaccine Allocation
+            <span class="neo-dot-pulse" title="Actively working"></span>
+          </h3>
+          <p style="max-width: 620px;">
+            This Project replicates California state's real world vaccine rollout dynamics by generating a synthetic population with 
+            age, comorbidities, exposure risk, and socioeconomic factors reflective of the state's demographics. Using a biased,
+            historically inspired logging policy, where high-risk groups were vaccinated earlier, I recreated the confounding patterns
+            seen in California's observational data. On top of this simulated environment, we evaluate and optimize new vaccine allocation strategies
+            using Causal off-policy methods, quantifying uncertainity through confidence intervals and regret analysis.
+          </p>
+          <ul class="tech-list">
+            <li>Causal Inference</li>
+            <li>Statistical Modeling</li>
+            <li>Inverse Propensity Weighting</li>
+            <li>Doubly Robust Estimation</li>
+          </ul>
+
+        </div>
         <div class="project-card">
             <a href="https://github.com/Vineeth-chaitanya/USBondYield_Prediction" target="_blank" class="project-link">
                 <span class="link-icon">🔗</span>

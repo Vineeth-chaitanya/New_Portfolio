@@ -164,7 +164,7 @@ footer {
 
 .project-card {
   position: relative;
-  background: #f8f9fa;          /* Light card background */
+  background: #fefefe;          /* Light card background */
   padding: 30px;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -253,4 +253,56 @@ footer {
 
 .social-sidebar.horizontal a:hover img {
   filter: grayscale(0%);
+}
+
+.tag-active {
+  background: #d1f7d6;
+  color: #0f7b2d;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.neo-dot-pulse {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #4ade80;
+  display: inline-block;
+
+  /* move it slightly to the right */
+  margin-left: 12px;
+
+  /* soft glow */
+  box-shadow:
+    0 0 8px rgba(74, 222, 128, 0.6),
+    inset 0 0 4px rgba(255, 255, 255, 0.6);
+
+  /* animation */
+  animation: beat 1.6s ease-in-out infinite;
+
+  /* cursor change on hover */
+  cursor: pointer;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 8px rgba(74, 222, 128, 0.6),
+      inset 0 0 4px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.25);
+    box-shadow:
+      0 0 14px rgba(74, 222, 128, 0.8),
+      inset 0 0 6px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 8px rgba(74, 222, 128, 0.6),
+      inset 0 0 4px rgba(255, 255, 255, 0.6);
+  }
 }
